@@ -1,4 +1,4 @@
-FROM php:8.0.5-fpm
+FROM php:8.1.0-fpm
 
 # Copy composer.json
 COPY composer.json /var/www/
