@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use DB;
 
-class IngredientSeeder extends Seeder
+class IngredientStockSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,24 +14,36 @@ class IngredientSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ingredients')->insert([
+        DB::table('ingredient_stock')->insert([
             [
-                'name' => 'Beef',
+                'ingredient_id' => 1,
+                'total_stock' => 20,
+                'remaining_stock' => 20,
+                'unit' => 'kg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'name' => 'Cheese',
+                'ingredient_id' => 2,
+                'total_stock' => 5,
+                'remaining_stock' => 5,
+                'unit' => 'kg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'name' => 'Onion',
+                'ingredient_id' => 3,
+                'total_stock' => 1,
+                'remaining_stock' => 1,
+                'unit' => 'kg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'name' => 'Olives',
+                'ingredient_id' => 4,
+                'total_stock' => 2,
+                'remaining_stock' => 2,
+                'unit' => 'kg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]

@@ -57,7 +57,7 @@ class ProductIngredientSeeder extends Seeder
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'product_id' => 1,
+                'product_id' => 2,
                 'ingredient_id' => 4,
                 'qty' => 10,
                 'unit' => 'g',
